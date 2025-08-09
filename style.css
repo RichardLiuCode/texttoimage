@@ -1,0 +1,120 @@
+body {
+    font-family: arial;
+
+}
+
+#display {
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    user-select: none;
+    outline: none;
+    border: none;
+
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+    width: 780px;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+.formLeft,
+.formRight,
+.thirdDisplay {
+    width: 250px;
+    height: 370px;
+    text-align: left;
+}
+
+.thirdDisplay {
+    text-align: center;
+}
+
+#downloadButton {
+    width: 180px;
+    height: 40px;
+    background-color: rgb(3, 253, 78);
+    font-size: 30px;
+    color: aliceblue;
+    border-width: 1px;
+    border-color: white;
+    margin-top: 10px;
+}
+
+#confirmMake {
+    display: none;
+}
+
+.Background-Color-Select,
+.Text-Color-Select,
+.sizeInput,
+.Text-X-Y-form,
+.fmc {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#ImageBackgroundColorSelect,
+#ImageTextColorSelect {
+    background-color: white;
+    width: 50px;
+    height: 25px;
+    padding: 0px;
+}
+
+#font-size-input,
+#textXPositionInput,
+#textYPositionInput,
+#rotate-input,
+#fontSelect {
+    width: 65px;
+    height: 20px;
+    font-size: 12px;
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0px;
+}
+
+#fontSelect {
+    height: 25px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
+}
+
+#input {
+    width: 200px;
+    height: 100px;
+    border-radius: 0px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 30px;
+    font-family: arial;
+    resize: none;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

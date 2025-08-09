@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text To Image</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <script src="convertFunction.js"></script>
+    <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+</head>
+
+<body>
+    <div class="background">
+        <div class="main">
+            <div class="formLeft">
+                <h1>Text to image</h1>
+                <textarea id="input" placeholder="Text">Hello!</textarea>
+            </div>
+            <div class="formRight">
+                <div class="Text-X-Y-form">
+                    <p>Text X-position</p>
+                    <input value="16" placeholder="X" type="number" id="textXPositionInput">
+                </div>
+                <div class="Text-X-Y-form">
+                    <p>Text Y-position</p>
+                    <input value="105" placeholder="Y" type="number" id="textYPositionInput">
+                </div>
+                <div class="Background-Color-Select">
+                    <p>Background-color:</p>
+                    <input type="color" value="#05ACFF" id="ImageBackgroundColorSelect">
+                </div>
+                <div class="Text-Color-Select">
+                    <p>Text-color:</p>
+                    <input type="color" value="#0602F2" id="ImageTextColorSelect">
+                </div>
+                <div class="sizeInput">
+                    <p>Font-size:</p>
+                    <input value="60" type="number" placeholder="Font-size" id="font-size-input">
+                </div>
+                <div class="fmc">
+                    <p>Font-family</p>
+                    <select id="fontSelect">
+                        <option style="font-family:Arial" value="Arial">Arial</option>
+                        <option style="font-family:Impact" value="Impact">Impact</option>
+                        <option style="font-family:Times New Roman" value="Times New Roman">Times New Roman</option>
+                        <option style="font-family:Courier New" value="Courier New">Courier New</option>
+                        <option style="font-family:Brush Script MT" value="Brush Script MT">Brush Script MT</option>
+                        <option style="font-family:Lucida Handwriting" value="Lucida Handwriting">Lucida Handwriting
+                        </option>
+                        <option style="font-family: cursive;" value="cursive">Cursive</option>
+                        <option style="font-family:papyrus" value="papyrus">Papyrus</option>
+                    </select>
+                </div>
+                <div class="fmc">
+                    <p>Text-rotate</p>
+                    <input value="0" type="number" placeholder="Rotate" id="rotate-input">
+                </div>
+            </div>
+            <div class="thirdDisplay">
+                <button id="confirmMake">Generate</button>
+                <br>
+                <iframe id="display"></iframe>
+                <button id="downloadButton">Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
